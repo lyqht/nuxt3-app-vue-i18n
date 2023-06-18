@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>{{ $t('hello', { name: 'vue-i18n' }) }}</h1>
+    <p>{{ $t('description') }}</p>
 +    <form>
 +      <label for="locale-select">{{ $t('language') }}: </label>
 +      <select id="locale-select" v-model="$i18n.locale">
