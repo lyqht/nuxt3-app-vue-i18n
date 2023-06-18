@@ -1,4 +1,5 @@
 {
     "hello": "Hello, {name}!",
-    "language": "Language"
+    "language": "Language",
+    "description": "This is a wonderful world isn't it?"
   }
