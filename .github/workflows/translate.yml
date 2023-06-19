@@ -20,5 +20,5 @@ jobs:
         with:
           target_languages: fr,ja,ko,zh,es
           input_file_path: README.md
-          output_file_name_prefix: docs/
+          output_file_name_prefix: docs/README.
           deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
