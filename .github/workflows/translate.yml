@@ -9,16 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Translate locales json
-        uses: lyqht/deepl-translate-github-action@v2.0.0-beta
+        uses: lyqht/deepl-translate-github-action@v2.0.1
         with:
           target_languages: fr,ja,ko,zh,es
           input_file_path: locales/en.json
           output_file_name_prefix: locales/
           deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
       - name: Translate README
-        uses: lyqht/deepl-translate-github-action@v2.0.0-beta
+        uses: lyqht/deepl-translate-github-action@v2.0.1
         with:
           target_languages: fr,ja,ko,zh,es
           input_file_path: README.md
           output_file_name_prefix: docs/README.
           deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
+          no_translate_start_tag : <!-- notranslate -->
+          no_translate_end_tag : <!-- /notranslate -->
